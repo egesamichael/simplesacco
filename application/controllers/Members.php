@@ -22,7 +22,7 @@ class Members extends CI_Controller {
     public function post_register()
     {
  
-        $this->form_validation->set_rules('first_name', 'First Name', 'required');
+      /*  $this->form_validation->set_rules('first_name', 'First Name', 'required');
         $this->form_validation->set_rules('last_name', 'Last Name', 'required');
         $this->form_validation->set_rules('contact_no', 'Contact No', 'required');
         $this->form_validation->set_rules('email', 'Email', 'required');
@@ -36,19 +36,19 @@ class Members extends CI_Controller {
             $this->load->view('register');
         }
         else
-        {   
+        {  */ 
             $data = array(
-               'first_name' => $this->input->post('first_name'),
-               'last_name' => $this->input->post('last_name'),
-               'mobile_number' => $this->input->post('contact_no'),
-               'email' => $this->input->post('email'),
-               'password' => md5($this->input->post('password')),
+               'fname' => $this->input->post('fname'),
+               'lname' => $this->input->post('lname'),
+               'gender' => $this->input->post('gender'),
+               'dob' => $this->input->post('dob'),
+               'account' => $this->input->post('account'),
  
              );
    
             $check = $this->User->insert_user($data);
  
-            if($check != false){
+          /*  if($check != false){
  
                 $user = array(
                  'user_id' => $check,
@@ -58,13 +58,13 @@ class Members extends CI_Controller {
                 );
              }
   
-             $this->session->set_userdata($user);
+             $this->session->set_userdata($user); */
  
-             redirect( base_url('dashboard') ); 
-            }
+             redirect( base_url('manageusers') ); 
+            
  
          
-    }*/
+    }
     public function logout(){
     $this->session->sess_destroy();
     redirect(base_url('home'));

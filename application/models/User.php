@@ -17,7 +17,7 @@ class User extends CI_Model {
     public function insert_user($data)
     {
  
-        $insert = $this->db->insert('staff', $data);
+        $insert = $this->db->insert('members', $data);
         if ($insert) {
            return $this->db->insert_id();
         } else {
