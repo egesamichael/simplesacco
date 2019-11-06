@@ -31,4 +31,14 @@ class User extends CI_Model {
       $this->db->from('members');
   return $num_rows = $this->db->count_all_results();
     }
+
+    public function displayrecords()
+
+    {
+
+        $query=$this->db->query("select * from members");
+    return $query->result();
+    }
+
+
 }

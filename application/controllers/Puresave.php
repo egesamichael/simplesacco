@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
  
-class Manageusers extends CI_Controller {
+class Puresave extends CI_Controller {
  
  /**
  * Index Page for this controller.
@@ -25,7 +25,7 @@ class Manageusers extends CI_Controller {
  $this->load->model('User');
 $data['num_results'] = $this->User->getmembers();
 
- $this->load->view('manageusers',$data);
+ $this->load->view('puresave',$data);
  $this->load->view('footer');
  }
 
@@ -35,7 +35,7 @@ $data['num_results'] = $this->User->getmembers();
 	$this->load->model('User');
 	$this->load->view('header2');
 	$result['data'] = $this->User->displayrecords();
-	$this->load->view('manageusers',$result);
+	$this->load->view('puresave',$result);
 	$this->load->view('footer');
 	}
 }

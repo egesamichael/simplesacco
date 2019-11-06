@@ -201,7 +201,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             </a>
             <div class="collapse" id="pure-save">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="#">Accounts</a></li>
+                <li class="nav-item"> <a class="nav-link" href="<?php echo base_url(); ?>puresave">Accounts</a></li>
                <li class="nav-item"> <a class="nav-link" href="#">Deposit</a></li>
                 <li class="nav-item"> <a class="nav-link" href="#">Withdraw</a></li>
               </ul>
