@@ -24,4 +24,11 @@ class User extends CI_Model {
             return false;
         }
     }
+
+    public function getmembers()
+    {
+ 
+      $this->db->from('members');
+  return $num_rows = $this->db->count_all_results();
+    }
 }

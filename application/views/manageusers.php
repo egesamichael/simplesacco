@@ -183,7 +183,11 @@
   </div>
 
                   <div class="table-responsive">
-                     <p class="card-title">Users</p>
+                     <p class="card-title">Users <?php if (isset($num_results)) {
+  echo 'There are ' . $num_results . ' returned';
+}
+
+?>
                     <table id="recent-purchases-listing" class="table">
                       <thead>
                         <tr>

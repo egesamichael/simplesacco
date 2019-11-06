@@ -22,7 +22,10 @@ class Manageusers extends CI_Controller {
  {   
  $this->load->helper('url');
  $this->load->view('header2');
- $this->load->view('manageusers');
+ $this->load->model('User');
+$data['num_results'] = $this->User->getmembers();
+
+ $this->load->view('manageusers',$data);
  $this->load->view('footer');
  }
 }

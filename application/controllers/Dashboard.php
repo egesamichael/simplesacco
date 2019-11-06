@@ -22,7 +22,10 @@ class Dashboard extends CI_Controller {
  {   
  $this->load->helper('url');
  $this->load->view('header2');
- $this->load->view('dashboard');
+ $this->load->model('User');
+$data['num_results'] = $this->User->getmembers();
+
+ $this->load->view('dashboard',$data);
  $this->load->view('footer2');
  }
 }

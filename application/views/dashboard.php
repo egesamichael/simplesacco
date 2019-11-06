@@ -85,7 +85,11 @@
                           <i class="mdi mdi-currency-usd mr-3 icon-lg text-danger"></i>
                           <div class="d-flex flex-column justify-content-around">
                             <small class="mb-1 text-muted">Active Members</small>
-                            <h5 class="mr-2 mb-0">0</h5>
+                            <h5 class="mr-2 mb-0"><?php if (isset($num_results)) {
+  echo  $num_results ;
+}
+
+?></h5>
                           </div>
                         </div>
                         <div class="d-flex border-md-right flex-grow-1 align-items-center justify-content-center p-4 item">
