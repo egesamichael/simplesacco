@@ -23,13 +23,13 @@ class Puresave extends CI_Controller {
  $this->load->helper('url');
  $this->load->view('header2');
  $this->load->model('User');
-$data['num_results'] = $this->User->getmembers();
+$result['data'] = $this->User->displaypuresave();
 
- $this->load->view('puresave',$data);
+ $this->load->view('puresave',$result);
  $this->load->view('footer');
  }
 
- public function dispdata()
+ /*public function dispdata()
 	{
 		 $this->load->helper('url');
 	$this->load->model('User');
@@ -37,5 +37,5 @@ $data['num_results'] = $this->User->getmembers();
 	$result['data'] = $this->User->displayrecords();
 	$this->load->view('puresave',$result);
 	$this->load->view('footer');
-	}
+	}*/
 }

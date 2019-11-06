@@ -11,7 +11,10 @@
                <!--   <button>Add Users</button><br>-->
                <div class="row"><div class="col-md-3">  <button type="button" class="btn btn-primary btn-lg btn-block" data-toggle="modal" data-target="#myModal">
                       <i class="mdi mdi-account"></i>                      
-                      Add Members
+                      Deposit
+                    </button></div> <div class="col-md-3">  <button type="button" class="btn btn-primary btn-lg btn-block" data-toggle="modal" data-target="#myModal">
+                      <i class="mdi mdi-account"></i>                      
+                      Withdraw
                     </button></div></div>
                 <br><br>
                  <!-- The Modal -->

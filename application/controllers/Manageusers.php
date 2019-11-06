@@ -18,18 +18,18 @@ class Manageusers extends CI_Controller {
  * map to /index.php/welcome/<method_name>
  * @see https://codeigniter.com/user_guide/general/urls.html
  */
- public function index()
+ public function indexz()
  {   
  $this->load->helper('url');
  $this->load->view('header2');
  $this->load->model('User');
-$data['num_results'] = $this->User->getmembers();
+$result['data'] = $this->User->getmembers();
 
- $this->load->view('manageusers',$data);
+ $this->load->view('manageusers',$result);
  $this->load->view('footer');
  }
 
- public function dispdata()
+ public function index()
 	{
 		 $this->load->helper('url');
 	$this->load->model('User');

@@ -40,5 +40,10 @@ class User extends CI_Model {
     return $query->result();
     }
 
+    public function displaypuresave()
+    {
+         $query=$this->db->query("select * from members where account='puresave'");
+    return $query->result();
+    }
 
 }
